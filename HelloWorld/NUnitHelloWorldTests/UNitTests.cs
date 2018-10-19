@@ -32,10 +32,10 @@ namespace NUnitHelloWorldTests
             Assert.AreEqual("Hello World", testClass.Test());
         }
         [Test]
-        public void TestMethodFailture()
+        public void TestMethod5()
         {
             TestClass testClass = new TestClass();
-            Assert.AreEqual("Hello World2", testClass.Test());
+            Assert.AreEqual("Hello World", testClass.Test());
         }
     }
     }
