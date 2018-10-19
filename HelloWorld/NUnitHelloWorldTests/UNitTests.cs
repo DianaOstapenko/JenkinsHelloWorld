@@ -1,5 +1,5 @@
 ﻿using System;
-using HelloWorld;
+using ApplicationUnderTest;
 using NUnit.Framework;
 
 namespace NUnitHelloWorldTests
@@ -10,7 +10,8 @@ namespace NUnitHelloWorldTests
             [Test]
             public void TestMethod1()
             {
-                Assert.AreEqual("Hello World", Program.CreateMessage());
-            }
+                TestClass testClass = new TestClass();
+                Assert.AreEqual("Hello World", testClass.Test());
+        }
         }
     }

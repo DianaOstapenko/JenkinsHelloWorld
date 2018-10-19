@@ -1,6 +1,7 @@
+using ApplicationUnderTest;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Program = HelloWorld.Program;
+
 
 namespace HelloWorldTests
 {
@@ -10,8 +11,8 @@ namespace HelloWorldTests
         [TestMethod]
         public void TestMethod1()
         {
-
-            Assert.AreEqual("Hello World", Program.CreateMessage());
+            TestClass testClass = new TestClass();
+            Assert.AreEqual("Hello World", testClass.Test());
         }
     }
 }
